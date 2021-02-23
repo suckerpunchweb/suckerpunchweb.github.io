@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>music</title>
+</head>
+<body>
+<p>
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+<br>
+// slug city - music
+
+<br>
+<br>
+
+  <div class="contain">
+        <div class="container">
+            <div class="music-player">
+                <div class="cover">
+                    <img src="https://www.slug.city/disk.png" alt="disk">   
+                </div>
+                <div class="titre">
+                    <h3>slug city</h3>
+                    <h1>stole the show</h1>
+                </div>
+                <div class="lecteur">
+                    <audio style="width: 100%;" class="fc-media">
+                        <source src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/kygo-stole-the-show.mp3" type="audio/mp3"/>
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+<br>
+
+// links
+<br>
+<a href="/index.html">home</a>
+<br>
+<a href="/music.html">music</a>
+<br>
+<a href="/blog.html">blog</a>
+<br>
+<a href="/minecraft.html">minecraft</a>
+
+<br>
+<br>
+
+// socials
+<br>
+twt / ig - @eenrey
+<br>
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+</p>
+</body>
+<style>
+body {
+  font-family: "mc";
+}
+div.i {
+  text-indent: 20px;
+}
+div.r {
+  text-indent: 0px;
+}
+/* unvisited link */
+a:link {
+  color: #cfa44e;
+}
+
+/* visited link */
+a:visited {
+  color: #9c7a36;
+}
+
+/* mouse over link */
+a:hover {
+  color: #f0c46c;
+}
+
+/* selected link */
+a:active {
+  color: #f0c46c;
+}
+
+@font-face {
+  font-family: 'mc';
+  src: url('mc.eot'); /* IE9 Compat Modes */
+  src: url('mc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('mc.woff') format('woff'), /* Modern Browsers */
+       url('mc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('mc.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+    	font-style: normal;
+ 		font-display: swap;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    width: 350px;
+    word-wrap: break-word;
+}
+
+html {	cursor:url(bunbun.png),auto;
+
+
+*:focus{
+    outline: none;
+}
+html {
+    background: #f2f2f2;
+}
+body {
+    margin: 0;
+    font-family: "mc",sans-serif;
+}
+h1 {
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    padding: 0 10%;
+}
+h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    padding: 0 10%;
+}
+.container {
+    display: block;
+    width: 100%;
+    height: 750px;
+    margin: auto;
+    overflow: hidden;
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+.music-player {
+    display: block;
+    position: relative;
+    width: 310px;
+    height: 070px;
+    margin: auto;
+    margin-top: 6%;
+    border-radius: 10px 10px 10px 10px;
+    background: transparent linear-gradient(to bottom,rgba(10,11,31,0.5) 50%,rgb(10,11,31, .5) 70%) repeat scroll 0 0;
+    box-shadow: 1px 10px 20px 5px #222;
+    display: flex;
+}
+.cover {
+    float: left;
+    width: 100%;
+    height: 66%;
+}
+
+.cover img {
+    display: block;
+    position: absolute;
+    top: -42px;
+    left: 8px;
+    width: 99px;
+    margin: auto;
+    text-align: center;
+}
+.titre {
+    float: left;
+    width: 100%;
+}
+.lecteur {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    float: left;
+}
+.mejs__button>button:focus {
+    outline: 0px dotted #999;
+}
+.mejs__container {
+    position: relative;
+    background-color: transparent;
+    min-width: auto !important;
+}
+.mejs__controls {
+    padding: 0 10%;
+    background: transparent !important;
+    display: block;
+    position: relative;
+}
+.mejs__controls div {
+    display: block;
+    float: left;
+    position: relative;
+}
+.mejs__controls .mejs__playpause-button {
+    position: absolute !important;
+    right: 05%;
+    top: 05%;
+    width: 40px;
+}
+.mejs__controls .mejs__playpause-button button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    font-family: FontAwesome;
+    font-size: 22px;
+    color: #cfa44e;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+.mejs__controls .mejs__play button:before{
+    content:"\f04b";
+}
+.mejs__controls .mejs__pause button:before{
+    content:"\f04c";
+}
+.mejs__controls .mejs__volume-button button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #cfa44e;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+.mejs__controls .mejs__mute button:before {
+    content: "\f028";
+}
+.mejs__controls .mejs__unmute button:before {
+    content: "\f026";
+}
+.mejs__controls .mejs__time {
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    color: #000;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    min-width: 100%;
+    font-family: "mc",sans-serif;
+    bottom: -55px;
+}
+.mejs__controls .mejs__time span {
+    font-size: 12px;
+}
+.mejs__controls span.mejs__duration {
+    float: right;
+    text-align: right;
+    color: #000;
+    font-family: "mc",sans-serif;
+}
+.mejs__controls span.mejs__currenttime {
+    font-weight: 700;
+    float: left;
+}
+.mejs__controls .mejs__time-rail {
+    width: 100%;
+    margin: 0;
+    font-family: "mc",sans-serif;
+}
+.mejs__controls .mejs__time-rail span {
+    position: absolute;
+    bottom: -00px;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.mejs__time-rail {
+  bottom: -09px;
+}
+.mejs__controls .mejs__time-rail .mejs__time-loaded {
+    background: rgba(255,255,255,0.2);
+    
+}
+.mejs__controls .mejs__time-rail .mejs__time-float {
+    display: none;
+    top: -40px;
+    width: 40px;
+    height: 25px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 10px;
+    background: #fff;
+    border: 0;
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-current {
+    display: block;
+    position: relative;
+    top: 0px;
+    margin: 0;
+    line-height: 26px;
+    color: #100d28;
+  
+}
+.mejs__controls .mejs__time-rail .mejs__time-float-corner {
+    top: auto;
+    bottom: -9px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fff;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.mejs__controls .mejs__time-rail .mejs__time-current {
+    background: #cfa44e none repeat scroll 0 0;
+}
+.mejs__controls .mejs__time-handle {
+    display: none;
+}
+
+@font-face {
+  font-family: 'mc';
+  src: url('https://www.slug.city/mc.eot'); /* IE9 Compat Modes */
+  src: url('https://www.slug.city/mc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.slug.city/mc.woff') format('woff'), /* Modern Browsers */
+       url('https://www.slug.city/mc.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://www.slug.city/mc.svg#svgFontName') format('svg'); /* Legacy iOS */
+       font-weight: normal;
+    	font-style: normal;
+ 		font-display: swap;
+}
+
+
+}
+</style>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+<script>
+var audio = {    
+    init: function() {        
+    var $that = this;        
+        $(function() {            
+            $that.components.media();        
+        });    
+    },
+    components: {        
+        media: function(target) {            
+            var media = $('audio.fc-media', (target !== undefined) ? target : 'body');            
+            if (media.length) {                
+                media.mediaelementplayer({                    
+                    audioHeight: 40,
+                    features : ['playpause', 'current', 'duration', 'progress', 'tracks'],
+                    alwaysShowControls      : true,
+                    timeAndDurationSeparator: '<span></span>',
+                    iPadUseNativeControls: true,
+                    iPhoneUseNativeControls: true,
+                    AndroidUseNativeControls: true                
+                });            
+            }        
+        },
+            
+    },
+};
+audio.init();
+</script>
