@@ -1,376 +1,161 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>music</title>
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css">
-</head>
-<body>
-<p>
-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-<br>
-// slug city - music
-
-<br>
-<br>
-
-
-<div class="contain">
-<div class="container">
-<div class="music-player">
-<div class="cover">
-<img src="https://www.slug.city/disk.png" alt="disk">   
-</div>
-<div class="titre">
-<h3>// slug city</h3>
-<h1>loop1</h1>
-</div>
-<div class="lecteur">
-<audio style="width: 100%;" class="fc-media">
-<source src="a1.mp3" type="audio/mp3"/>
-</audio>
-</div>
-</div>
-</div>
-</div>
-
-<br>
-<br>
-(also peep these links)
-<br>
-<a href="https://www.youtube.com/channel/UCSpXz48QFqOI9KMlneS6zTg">youtube</a>
-<br>
-<a href="https://soundcloud.com/slugcity">soundcloud</a>
-<br>
-<br>
-
-// links
-<br>
-<a href="/index.html">home</a>
-<br>
-<a href="/music.html">music</a>
-<br>
-<a href="/blog.html">blog</a>
-<br>
-<a href="/minecraft.html">minecraft</a>
-<br>
-<br>
-// socials
-<br>
-twt / ig - @eenrey
-<br>
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-</p>
-</body>
 <style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
-  font-family: "mc";
+  background-image: url('https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/slugcitybg_music.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
-div.i {
-  text-indent: 20px;
+div.menu {
+  background-color: white;
+  width: 100%;
+  height: 20px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Lucida Grande";
+  overflow : hidden;
+  box-shadow: 0px 1px 15px #000000;
 }
-div.r {
-  text-indent: 0px;
+div.folder {
+  float:right;
+  width: 100px;
+  height: 100px;
+  border: 0px;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Lucida Grande";
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px 1px 4px #000000;
+  overflow : hidden;
+  text-align: center;
+  line-height: 0;
 }
-/* unvisited link */
+div.tbox {
+  width: 33%;
+  border: 0px;
+  padding: 30px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Lucida Grande";
+  overflow : hidden;
+  position:absolute
+}
+.highlight {
+    color: white;
+    background-color: black;
+    box-shadow: 0.2em 0 0 black,-0.2em 0 0 black;
+}
 a:link {
-  color: #cfa44e;
+  color: #000080;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #9c7a36;
+  color: #4B0082;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: #f0c46c;
+  color: #0000FF;
+  text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: #f0c46c;
+  color: #000080;
+  text-decoration: none;
 }
 
-html, body {
-    height: 100%;
+.tbox a:link {
+  color: white;
+  text-decoration: underline;
+}
+.tbox a:visited {
+  color: white;
+  text-decoration: underline;
+}
+.tbox a:hover {
+  color: white;
+  text-decoration: none;
 }
 
-html {
-    display: table;
-    margin: auto;
+.tbox a:active {
+  color: white;
+  text-decoration: none;
 }
-
-body {
-    display: table-cell;
-    width: 350px;
-    word-wrap: break-word;
-    padding: 20px;
-    box-shadow: 0px 0px 50px -25px #222;
-}
-
-html {	cursor:url(bunbun.png),auto;
-}
-
-
-*:focus{
-    outline: none;
-}
-
-h1 {
-    margin: 0;
-    font-size: 14px;
-    color: #000;
-    padding: 0 10%;
-    width: 1px;
-    white-space: nowrap;
-}
-h3 {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 500;
-    color: #000;
-    padding: 0 10%;
-    width: 1px;
-    white-space: nowrap;
-}
-.container {
-    display: block;
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    background-repeat: repeat;
-    background-size: cover;
-    
-}
-.music-player {
-    display: block;
-    position: relative;
-    width: 310px;
-    height: 070px;
-    margin: auto;
-    margin-top: 6%;
-    border-radius: 10px 10px 10px 10px;
-    background: transparent linear-gradient(to bottom,rgba(10,11,31,0.1) 50%,rgb(10,11,31,0.1) 70%) repeat scroll 0 0;
-    box-shadow: 0px 0px 20px -10px #222;
-    display: flex;
-}
-.cover {
-    float: left;
-    width: 100%;
-    height: 66%;
-}
-
-.cover img {
-    display: block;
-    position: absolute;
-    top: -42px;
-    left: 8px;
-    width: 99px;
-    margin: auto;
-    text-align: center;
-}
-.titre {
-    float: left;
-    width: 100%;
-}
-.lecteur {
-    width: 100%;
-    display: block;
-    height: auto;
-    position: relative;
-    float: left;
-}
-.mejs__button>button:focus {
-    outline: 0px dotted #999;
-}
-.mejs__container {
-    position: relative;
-    background-color: transparent;
-    min-width: auto !important;
-}
-.mejs__controls {
-    padding: 0 10%;
-    background: transparent !important;
-    display: block;
-    position: relative;
-}
-.mejs__controls div {
-    display: block;
-    float: left;
-    position: relative;
-}
-.mejs__controls .mejs__playpause-button {
-    position: absolute !important;
-    right: 05%;
-    top: 05%;
-    width: 40px;
-}
-.mejs__controls .mejs__playpause-button button {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: 0;
-    font-family: FontAwesome;
-    font-size: 22px;
-    color: #cfa44e;
-    background: transparent;
-    padding: 0;
-    margin: 0;
-}
-.mejs__controls .mejs__play button:before{
-    content:"\f04b";
-}
-.mejs__controls .mejs__pause button:before{
-    content:"\f04c";
-}
-.mejs__controls .mejs__volume-button button {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: 0;
-    font-family: FontAwesome;
-    font-size: 20px;
-    color: #cfa44e;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-}
-.mejs__controls .mejs__mute button:before {
-    content: "\f028";
-}
-.mejs__controls .mejs__unmute button:before {
-    content: "\f026";
-}
-.mejs__controls .mejs__time {
-    width: 100%;
-    margin-top: 7%;
-    margin-bottom: 3%;
-    color: #000;
-    height: auto;
-    padding: 0;
-    overflow: visible;
-    min-width: 100%;
-    font-family: "mc",sans-serif;
-    bottom: -40px;
-}
-.mejs__controls .mejs__time span {
-    font-size: 12px;
-}
-.mejs__controls span.mejs__duration {
-    float: right;
-    text-align: right;
-    color: rgba(10,11,31,0);
-    font-family: "mc",sans-serif;
-    
-}
-.mejs__controls span.mejs__currenttime {
-    font-weight: 700;
-    float: left;
-}
-.mejs__controls .mejs__time-rail {
-    width: 100%;
-    margin: 0;
-    font-family: "mc",sans-serif;
-}
-.mejs__controls .mejs__time-rail span {
-    position: absolute;
-    bottom: -00px;
-    width: 100%;
-    height: 4px;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.mejs__time-rail {
-  bottom: -09px;
-}
-.mejs__controls .mejs__time-rail .mejs__time-loaded {
-    background: rgba(255,255,255,0.2);
-    
-}
-.mejs__controls .mejs__time-rail .mejs__time-float {
-    display: none;
-    top: -40px;
-    width: 40px;
-    height: 25px;
-    margin-left: 0px;
-    text-align: center;
-    font-size: 10px;
-    background: #fff;
-    border: 0;
-}
-.mejs__controls .mejs__time-rail .mejs__time-float-current {
-    display: block;
-    position: relative;
-    top: 0px;
-    margin: 0;
-    line-height: 26px;
-    color: #100d28;
-  
-}
-.mejs__controls .mejs__time-rail .mejs__time-float-corner {
-    top: auto;
-    bottom: -9px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-top: 6px solid #fff;
-    border-right: 6px solid transparent;
-    border-left: 6px solid transparent;
-}
-.mejs__controls .mejs__time-rail .mejs__time-current {
-    background: #cfa44e none repeat scroll 0 0;
-}
-.mejs__controls .mejs__time-handle {
-    display: none;
-}
-
-@font-face {
-  font-family: 'mc';
-  src: url('https://www.slug.city/mc.eot'); /* IE9 Compat Modes */
-  src: url('https://www.slug.city/mc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://www.slug.city/mc.woff') format('woff'), /* Modern Browsers */
-       url('https://www.slug.city/mc.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('https://www.slug.city/mc.svg#svgFontName') format('svg'); /* Legacy iOS */
-       font-weight: normal;
-    	font-style: normal;
- 		font-display: swap;
-}
-
 </style>
+</head>
+<body>
+<div class=menu>	
+&nbsp;&nbsp;&nbsp;&#63743
+&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Slug City</span>
+&nbsp;&nbsp;&nbsp;File
+&nbsp;&nbsp;&nbsp;Edit
+&nbsp;&nbsp;&nbsp;View
+&nbsp;&nbsp;&nbsp;<a href="/index.html">Home</a>
+&nbsp;&nbsp;&nbsp;<a href="/music.html">Music</a>
+&nbsp;&nbsp;&nbsp;<a href="/minecraft.html">Minecraft</a>
+&nbsp;&nbsp;&nbsp;Help
+<span style="float:right;">
+<span id="date"></span> 
+<span id="clock"></span>&nbsp;&nbsp;
+ian reyes&nbsp;&nbsp;&nbsp;
+</span>
+</div>
+
+
+<div class=folder>
+<img src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/folder.png width=65px>
+<p>stuffidk</p>
+</div>
+
+<div class=tbox>
+<span class=highlight>
+<br>
+music.html
+<br>
+<br>
+heres my music :)
+<br>
+<br>
+ill put links directly to my music here
+<br>they're not here yet but just wait!!
+<br>i promise smtn will go here someday
+<br>
+<br>
+links 2 my stuff
+<br>
+<a href="https://www.youtube.com/channel/UCSpXz48QFqOI9KMlneS6zTg">youtube</a>
+<br><a href="https://www.soundcloud.com/slugcity">soundcloud</a>
+<span>
+</div>
+
+</body>
+<script>
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+
+var d=new Date();
+var weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var dayshort=(weekday[d.getDay()]);  
+document.getElementById("date").innerHTML=dayshort;
+</script>
 </html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
-<script>
-var audio = {    
-    init: function() {        
-    var $that = this;        
-        $(function() {            
-            $that.components.media();        
-        });    
-    },
-    components: {        
-        media: function(target) {            
-            var media = $('audio.fc-media', (target !== undefined) ? target : 'body');            
-            if (media.length) {                
-                media.mediaelementplayer({                    
-                    audioHeight: 40,
-                    features : ['playpause', 'current', 'duration', 'progress', 'tracks'],
-                    alwaysShowControls      : true,
-                    timeAndDurationSeparator: '<span></span>',
-                    iPadUseNativeControls: true,
-                    iPhoneUseNativeControls: true,
-                    AndroidUseNativeControls: true                
-                });            
-            }        
-        },
-            
-    },
-};
-audio.init();
-</script>
