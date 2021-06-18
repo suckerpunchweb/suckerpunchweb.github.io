@@ -207,6 +207,11 @@ var pl = '';
   $('#rest').html(r.description+'<br>players online: '+r.players.online+'/'+r.players.max);
 document.getElementById('image').draggable = false;
 });
+
+var audio = new Audio("click.ogg");
+document.onclick = function() {
+  audio.play();
+}
 </script>
 </html>
 
