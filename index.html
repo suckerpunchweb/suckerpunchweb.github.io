@@ -144,6 +144,8 @@ document.getElementById("date").innerHTML=dayshort;
   
 var audio = new Audio("click.ogg");
 document.onclick = function() {
+  audio.pause();
+  audio.currentTime = 0;
   audio.play();
 }
 </script>
