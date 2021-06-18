@@ -5,96 +5,157 @@ permalink: /404.html
 <!DOCTYPE html>
 <html>
 <head>
-<title>home</title>
-</head>
-<body>
-<p>
-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-<br>
-// err 404
-
-<br>
-<br>
-
-oops! something went wrong :(
-<br>
-check back in a little while
-
-
-<br>
-<br>
-
---> 
-<a href="/index.html">home</a>
-
-<br>
-<br>
-
-
-
--=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-</p>
-</body>
 <style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
-  font-family: "mc";
+  background-image: url('https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/slugcitybg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
-div.i {
-  text-indent: 20px;
+div.menu {
+  background-color: white;
+  width: 100%;
+  height: 20px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Lucida Grande";
+  overflow : hidden;
+  box-shadow: 0px 1px 15px #000000;
 }
-div.r {
-  text-indent: 0px;
+div.folder {
+  float:right;
+  width: 100px;
+  height: 100px;
+  border: 0px;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Lucida Grande";
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px 1px 4px #000000;
+  overflow : hidden;
+  text-align: center;
+  line-height: 0;
 }
-/* unvisited link */
+div.tbox {
+  width: 33%;
+  border: 0px;
+  padding: 30px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Lucida Grande";
+  overflow : hidden;
+  position:absolute
+}
+.highlight {
+    color: white;
+    background-color: black;
+    box-shadow: 0.2em 0 0 black,-0.2em 0 0 black;
+}
 a:link {
-  color: #cfa44e;
+  color: #000080;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #9c7a36;
+  color: #4B0082;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: #f0c46c;
+  color: #0000FF;
+  text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: #f0c46c;
+  color: #000080;
+  text-decoration: none;
 }
 
-@font-face {
-  font-family: 'mc';
-  src: url('mc.eot'); /* IE9 Compat Modes */
-  src: url('mc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('mc.woff') format('woff'), /* Modern Browsers */
-       url('mc.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('mc.svg#svgFontName') format('svg'); /* Legacy iOS */
-       font-weight: normal;
-    	font-style: normal;
- 		font-display: swap;
+.tbox a:link {
+  color: white;
+  text-decoration: underline;
+}
+.tbox a:visited {
+  color: white;
+  text-decoration: underline;
+}
+.tbox a:hover {
+  color: white;
+  text-decoration: none;
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-  width: 350px;
-    word-wrap: break-word;
-}
-  
-html {	cursor:url(bunbun.png),auto;
+.tbox a:active {
+  color: white;
+  text-decoration: none;
 }
 </style>
+</head>
+<body>
+<div class=menu>	
+&nbsp;&nbsp;&nbsp;&#63743
+&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Slug City</span>
+&nbsp;&nbsp;&nbsp;File
+&nbsp;&nbsp;&nbsp;Edit
+&nbsp;&nbsp;&nbsp;View
+&nbsp;&nbsp;&nbsp;<a href="/index.html">Home</a>
+&nbsp;&nbsp;&nbsp;<a href="/music.html">Music</a>
+&nbsp;&nbsp;&nbsp;<a href="/minecraft.html">Minecraft</a>
+&nbsp;&nbsp;&nbsp;Help
+<span style="float:right;">
+<span id="date"></span> 
+<span id="clock"></span>&nbsp;&nbsp;
+ian reyes&nbsp;&nbsp;&nbsp;
+</span>
+</div>
+
+
+<div class=folder>
+<img src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/folder.png width=65px>
+<p>stuffidk</p>
+</div>
+
+<div class=tbox>
+<span class=highlight>
+<br>
+404.html
+<br>
+<br>
+err 404
+<br>
+<br>
+oops! something went wrong :(
+<br>the page you are looking for does not exist or another error occured.
+<br>
+<br>
+<a href="/index.html">home</a>
+<span>
+</div>
+
+</body>
+<script>
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+
+var d=new Date();
+var weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var dayshort=(weekday[d.getDay()]);  
+document.getElementById("date").innerHTML=dayshort;
+</script>
 </html>
 
