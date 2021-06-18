@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+  background-image: url('https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/slugcitybg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+div.menu {
+  background-color: white;
+  width: 100%;
+  height: 20px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Lucida Grande";
+  overflow : hidden;
+  box-shadow: 0px 1px 15px #000000;
+}
+div.folder {
+  float:right;
+  width: 100px;
+  height: 100px;
+  border: 0px;
+  padding: 10px;
+  margin: 0px;
+  font-family: "Lucida Grande";
+  color: white;
+  font-size: 12px;
+  text-shadow: 0px 1px 4px #000000;
+  overflow : hidden;
+  text-align: center;
+  line-height: 0;
+}
+
+a:link {
+  color: #000080;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #4B0082;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #000080;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class=menu>	
+&nbsp;&nbsp;&nbsp;&#63743
+&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Slug City</span>
+&nbsp;&nbsp;&nbsp;File
+&nbsp;&nbsp;&nbsp;Edit
+&nbsp;&nbsp;&nbsp;View
+&nbsp;&nbsp;&nbsp;<a href="/index.html">Home</a>
+&nbsp;&nbsp;&nbsp;<a href="/music.html">Music</a>
+&nbsp;&nbsp;&nbsp;<a href="/minecraft.html">Minecraft</a>
+&nbsp;&nbsp;&nbsp;Help
+<span style="float:right;">
+<span id="date"></span> 
+<span id="clock"></span>&nbsp;&nbsp;
+ian reyes&nbsp;&nbsp;&nbsp;
+</span>
+</div>
+
+<div class=folder>
+<img src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/folder.png width=65px>
+<p>stuffidk</p>
+</div>
+
+</body>
+<script>
+var myVar = setInterval(function() {
+  myTimer();
+}, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("clock").innerHTML = d.toLocaleTimeString();
+}
+
+var d=new Date();
+var weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var dayshort=(weekday[d.getDay()]);  
+document.getElementById("date").innerHTML=dayshort;
+</script>
+</html>
+
