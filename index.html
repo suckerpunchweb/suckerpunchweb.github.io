@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Slug City // Home</title>
+<title>SLUG CITY // HOME</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 <style>
 @font-face {
@@ -42,95 +42,77 @@ html, body {
     padding: 0;
 }
 body {
-  background-image: url('https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/slugcitybg.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
+  padding: 35px;
+  margin: 0px;
 }
 div.menu {
   background-color: white;
-  width: 100%;
-  height: 20px;
   border: 0px;
   padding: 0px;
   padding-top: 5px;
   margin: 0px;
-  font-size: 16px;
   font-family: "lg";
   overflow : hidden;
-  box-shadow: 0px 1px 15px #000000;
-}
-div.folder {
-  float:right;
-  width: 100px;
-  height: 100px;
-  border: 0px;
-  padding: 10px;
-  margin: 0px;
-  font-family: "lg";
-  color: white;
-  font-size: 14px;
-  text-shadow: 0px 1px 4px #000000;
-  overflow : hidden;
-  text-align: center;
-  line-height: 0;
+  
+  font-size: 26px;
 }
 
 a:link {
-  color: #000080;
+  color: #000000;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #4B0082;
+  color: #000000;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: #0000FF;
+  color: #000000;
   text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: #000080;
+  color: #000000;
   text-decoration: none;
 }
 .bold {
-  font-family:"lgb"
+  font-family:"lgb";
+  font-size: 69px;
+}
+.sub {
+  font-size: 21px;
 }
 </style>
 </head>
+
 <body>
 <div class=menu>	
-&nbsp;&nbsp;&nbsp;<img src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/apple2.png height=15px>
-&nbsp;&nbsp;&nbsp;<span class=bold>Slug City</span>
-&nbsp;&nbsp;&nbsp;File
-&nbsp;&nbsp;&nbsp;Edit
-&nbsp;&nbsp;&nbsp;View
-&nbsp;&nbsp;&nbsp;<a href="/index.html">Home</a>
-&nbsp;&nbsp;&nbsp;<a href="/music.html">Music</a>
-&nbsp;&nbsp;&nbsp;<a href="/minecraft.html">Minecraft</a>
-&nbsp;&nbsp;&nbsp;Help
-<span style="float:right;">
+<span class=bold>slug city.</span>
+<br>
+<span class=sub>america's worst</span>
+ "music" 
+<span class=sub>artist</span>
+ - 
 <span id="date"></span> 
-<span id="clock"></span>&nbsp;&nbsp;
-ian reyes&nbsp;&nbsp;&nbsp;
-</span>
-</div>
-
-<div class=folder>
-<img ondblclick="openFolder()" src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/folder.png width=65px>
-<p>stuffidk</p>
+<span id="clock"></span>
+<br>
+<br>
+01.<a href="/index.html">home</a>
+<br>
+02.<a href="/music.html">music</a>
+<br>
+03.<a href="/minecraft.html">minecraft</a>
 </div>
 
 </body>
 <script>
 var myVar = setInterval(function() {
   myTimer();
-}, 1000);
+}, 0);
 
 function myTimer() {
   var d = new Date();
@@ -138,20 +120,9 @@ function myTimer() {
 }
 
 var d=new Date();
-var weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var weekday=new Array("sun","mon","tue","Wed","thu","fri","sat");
 var dayshort=(weekday[d.getDay()]);  
 document.getElementById("date").innerHTML=dayshort;
-  
-var audio = new Audio("click.ogg");
-document.onclick = function() {
-  audio.pause();
-  audio.currentTime = 0;
-  audio.play();
-}
-  
-function openFolder() {
-  window.open("/secretimage.png");
-}
+
 </script>
 </html>
-
