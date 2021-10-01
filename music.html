@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Slug City // Music</title>
+<title>slug city / music</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 <style>
 @font-face {
-  font-family: 'lg';
-  src: url('lg.eot'); /* IE9 Compat Modes */
-  src: url('lg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('lg.woff') format('woff'), /* Modern Browsers */
-       url('lg.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('lg.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'hn';
+  src: url('hn.eot'); /* IE9 Compat Modes */
+  src: url('hn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('hn.woff') format('woff'), /* Modern Browsers */
+       url('hn.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('hn.svg#svgFontName') format('svg'); /* Legacy iOS */
        font-weight: normal;
     	font-style: normal;
  		font-display: swap;
 }
 @font-face {
-  font-family: 'lgb';
-  src: url('lgb.eot'); /* IE9 Compat Modes */
-  src: url('lgb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('lgb.woff') format('woff'), /* Modern Browsers */
-       url('lgb.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('lgb.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'hnb';
+  src: url('hnb.eot'); /* IE9 Compat Modes */
+  src: url('hnb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('hnb.woff') format('woff'), /* Modern Browsers */
+       url('hnb.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('hnb.svg#svgFontName') format('svg'); /* Legacy iOS */
        font-weight: normal;
     	font-style: normal;
  		font-display: swap;
@@ -42,150 +42,85 @@ html, body {
     padding: 0;
 }
 body {
-  background-image: url('https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/slugcitybg_music.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  padding: 35px;
+  margin: 0px;
 }
 div.menu {
   background-color: white;
-  width: 100%;
-  height: 20px;
   border: 0px;
   padding: 0px;
   padding-top: 5px;
   margin: 0px;
-  font-size: 16px;
-  font-family: "lg";
+  font-family: "hn";
   overflow : hidden;
-  box-shadow: 0px 1px 15px #000000;
+  
+  font-size: 26px;
 }
-div.folder {
-  float:right;
-  width: 100px;
-  height: 100px;
-  border: 0px;
-  padding: 10px;
-  margin: 0px;
-  font-family: "lg";
-  color: white;
-  font-size: 14px;
-  text-shadow: 0px 1px 4px #000000;
-  overflow : hidden;
-  text-align: center;
-  line-height: 0;
-}
-div.tbox {
-  width: 33%;
-  border: 0px;
-  padding: 30px;
-  margin: 0px;
-  font-size: 16px;
-  font-family: "ml";
-  overflow : hidden;
-  position:absolute
-}
-.highlight {
-    color: white;
-    background-color: black;
-    box-shadow: 0.2em 0 0 black,-0.2em 0 0 black;
-}
+
 a:link {
-  color: #000080;
+  color: #000000;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #4B0082;
+  color: #000000;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: #0000FF;
+  color: #000000;
   text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-  color: #000080;
-  text-decoration: none;
-}
-
-.tbox a:link {
-  color: white;
-  text-decoration: underline;
-}
-.tbox a:visited {
-  color: white;
-  text-decoration: underline;
-}
-.tbox a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.tbox a:active {
-  color: white;
+  color: #000000;
   text-decoration: none;
 }
 .bold {
-  font-family:"lgb"
+  font-family:"hn";
+  font-size: 69px;
+}
+.sub {
+  font-size: 21px;
 }
 </style>
 </head>
+
 <body>
 <div class=menu>	
-&nbsp;&nbsp;&nbsp;<img src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/apple2.png height=15px>
-&nbsp;&nbsp;&nbsp;<span class=bold>Slug City</span>
-&nbsp;&nbsp;&nbsp;File
-&nbsp;&nbsp;&nbsp;Edit
-&nbsp;&nbsp;&nbsp;View
-&nbsp;&nbsp;&nbsp;<a href="/index.html">Home</a>
-&nbsp;&nbsp;&nbsp;<a href="/music.html">Music</a>
-&nbsp;&nbsp;&nbsp;<a href="/minecraft.html">Minecraft</a>
-&nbsp;&nbsp;&nbsp;Help
-<span style="float:right;">
+<span class=bold>mocha.</span>
+<br>
+<span class=sub>album by</span>
+ slug city -  
 <span id="date"></span> 
-<span id="clock"></span>&nbsp;&nbsp;
-ian reyes&nbsp;&nbsp;&nbsp;
+<span id="clock"></span>
+<br>
+<br>
+01.<a href="/index.html">home</a>
+<br>
+02.<a href="/music.html">music</a>
+<br>
+03.<a href="/minecraft.html">minecraft</a>
+<br>
+<br>
+<span class=sub>
+mocha is my auditory diary that
+<br>
+shows my progression as a musician.
+<br>
+<br>
+please enjoy.
 </span>
-</div>
-
-
-<div class=folder>
-<img ondblclick="openFolder()" src=https://raw.githubusercontent.com/slugcity/slugcity.github.io/main/folder.png width=65px>
-<p>stuffidk</p>
-</div>
-
-<div class=tbox>
-<span class=highlight>
-<br>
-music.html
-<br>
-<br>
-heres my music :)
-<br>
-<br>
-ill put links directly to my music here
-<br>they're not here yet but just wait!!
-<br>i promise smtn will go here someday
-<br>
-<br>
-links 2 my stuff
-<br>
-<a href="https://slug-city.bandcamp.com/">bandcamp</a>
-<br><a href="https://www.youtube.com/channel/UCSpXz48QFqOI9KMlneS6zTg">youtube</a>
-<br><a href="https://www.soundcloud.com/slugcity">soundcloud</a>
-<span>
 </div>
 
 </body>
 <script>
 var myVar = setInterval(function() {
   myTimer();
-}, 1000);
+}, 0);
 
 function myTimer() {
   var d = new Date();
@@ -197,16 +132,5 @@ var weekday=new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
 var dayshort=(weekday[d.getDay()]);  
 document.getElementById("date").innerHTML=dayshort;
 
-var audio = new Audio("click.ogg");
-document.onclick = function() {
-  audio.pause();
-  audio.currentTime = 0;
-  audio.play();
-}
-  
-function openFolder() {
-  window.open("/secretimage.png");
-}
 </script>
 </html>
-
