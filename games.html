@@ -155,7 +155,7 @@ $.getJSON(url, function(r) {
  } 
 var pl = '';
  if(r.players.online > 0 ){ pl = '<br>Leader: '+r.players.sample[1].name;  } 
-  $('#rest').html('<br>players online: '+r.players.online+'/'+r.players.max);
+  $('#rest').html('players online: '+r.players.online+'/'+r.players.max);
 document.getElementById('image').draggable = false;
 });
 
