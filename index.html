@@ -16,6 +16,7 @@
       #links a { color:#000; }
       #links a:hover { color:#00aef0; }
       #mySidebar {font-family: 'Helvetica'; font-weight: bold; color:#fff; margin:0; padding:0; border:0;}
+      .pointer       { cursor: pointer; }
       
       @media (min-width: 425px) and (orientation:portrait) {
         #links { bottom: 11.5em; left:0em; font-size: 1.5em; }
@@ -24,7 +25,9 @@
       @media (max-width: 1280px) and (orientation:landscape) {
         #logo { max-height:10%; max-width:25%; }
       }
-
+	li:artists {
+	    cursor: pointer;
+	}
       
 
   </style>
@@ -42,7 +45,7 @@
     <div id="title" style="color: rgb(255, 255, 255); opacity: 1;">
       <img src="https://raw.githubusercontent.com/suckerpunchweb/suckerpunchweb.github.io/main/suckerpunchlogo.png" alt="suckerPUNCH" height="75">
       <div id="links">
-        <a target="_blank" onclick="w3_open()">ARTISTS</a><br>
+        <div class="pointer"><a target="_blank" onclick="w3_open()">ARTISTS</a><br></div>
         <a target="_blank" href="http://fezgame.com/">STORE</a><br>
         <a target="_blank" href="http://www.panoramic.al/">NEWS</a><br>
         <a target="_blank" href="http://superhypercube.com/">ABOUT</a><br>
