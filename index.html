@@ -2,6 +2,7 @@
   <meta charset="utf-8">
   <title>suckerPUNCH</title>
   <link rel="icon" href="polytron-icon.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <meta name="description" content="suckerPUNCH">
   <style type="text/css">
       body { background: #fefefe; font-family: 'Helvetica'; font-weight: bold; color:#fff; margin:0; padding:0; border:0;}
@@ -14,7 +15,7 @@
       #links { text-align:left; color:#fff; display:block; position:relative; width: 10em; height:5em; bottom: 6.4em; left:103%; z-index: 2; font-size: 0.75em; font-weight: normal; }
       #links a { color:#000; }
       #links a:hover { color:#00aef0; }
-      
+      #mySidebar {font-family: 'Helvetica'; font-weight: bold; color:#fff; margin:0; padding:0; border:0;}
       
       @media (min-width: 425px) and (orientation:portrait) {
         #links { bottom: 11.5em; left:0em; font-size: 1.5em; }
@@ -30,11 +31,18 @@
 </head>
 <body style="zoom: 1; background-color: rgb(255, 255, 255);">
     
+<div class="w3-sidebar w3-bar-block w3-border-right w3-animate-right" style="display:none;width:25%;right:0;" id="mySidebar">
+  
+  <a href="www.slug.city" class="w3-bar-item w3-button w3-hover-none w3-text-black w3-hover-text-blue">slug city</a>
+  
+  <button onclick="w3_close()" class="w3-hover-none w3-button w3-bar-item w3-text-black w3-hover-text-blue">&times; CLOSE</button>
+</div>
+
 
     <div id="title" style="color: rgb(255, 255, 255); opacity: 1;">
       <img src="https://raw.githubusercontent.com/suckerpunchweb/suckerpunchweb.github.io/main/suckerpunchlogo.png" alt="suckerPUNCH" height="75">
       <div id="links">
-        <a target="_blank" href="https://polyshop.store-08.com/polyshop/">ARTISTS</a><br>
+        <a target="_blank" onclick="w3_open()">ARTISTS</a><br>
         <a target="_blank" href="http://fezgame.com/">STORE</a><br>
         <a target="_blank" href="http://www.panoramic.al/">NEWS</a><br>
         <a target="_blank" href="http://superhypercube.com/">ABOUT</a><br>
@@ -47,5 +55,15 @@
         <svg viewBox="0 0 256 256"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines"> <path d="M80,256l0,-128c0,-26.492 21.508,-48 48,-48c26.492,0 48,21.508 48,48c0,26.492 -21.508,48 -48,48l-48,0" style="fill: none; stroke: rgb(255, 111, 1); stroke-width: 32px; stroke-dashoffset: 0px;" stroke-dasharray="402.204833984375"></path> <path d="M48,256l0,-128c0,-44.153 35.847,-80 80,-80c44.153,0 80,35.847 80,80c0,44.153 -35.847,80 -80,80l-32,0" style="fill: none; stroke: rgb(255, 242, 0); stroke-width: 32px; stroke-dashoffset: 0px;" stroke-dasharray="537.005859375"></path> <path d="M16,256l0,-128c0,-61.814 50.186,-112 112,-112c61.814,0 112,50.186 112,112c0,61.814 -50.186,112 -112,112l-32,0" style="fill: none; stroke: rgb(0, 174, 240); stroke-width: 32px; stroke-dashoffset: 0px;" stroke-dasharray="687.8078002929688"></path></g></svg>
       </div>
     </div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body></html>
