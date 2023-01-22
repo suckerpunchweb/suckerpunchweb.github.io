@@ -82,25 +82,25 @@
 }
 
 .cardsmallt {
-  	animation-name: slidein;
+  	--animation-name: slidein;
     animation-duration: 1.5s;
     aspect-ratio : 1 / 1;
     --border: 2px solid black;
     height:42%;
     
     background: white;
-    margin-left: 30px;
+    --margin-left: 30px;
     display:flex;
   }
 .cardsmallb {
-  	animation-name: slidein;
+  	--animation-name: slidein;
     animation-duration: 1.5s;
     aspect-ratio : 1 / 1;
     --border: 2px solid black;
     height:42%;
-    margin-top: 13%;
+    margin-top: 14%;
     background: white;
-    margin-left: 30px;
+    --margin-left: 30px;
     display:flex;
   }
 .cardsmallt > span, .cardsmallb > span {
@@ -110,7 +110,11 @@
     
 }
 .smallcards {
-	margin-right:30px;
+	--margin-right:30px;
+    margin-left:30px;
+    background: white;
+    height:100%;
+    aspect-ratio : .4 / 1;
   }
 #cardsmalltitle { color:#000; font-size:1em; background-color:fff;}
 
