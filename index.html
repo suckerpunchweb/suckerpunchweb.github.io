@@ -5,7 +5,7 @@
   <meta name="description" content="suckerPUNCH">
   <style type="text/css">
       body { background: #fefefe; font-family: 'Helvetica'; font-weight: bold; color:#000; margin:0; padding:0; border:0;}
-      a { color:#00aef0; text-decoration: none; }
+      a { color:#00000; text-decoration: none; }
       a:hover { color:#ff6f01; }
       input { border-radius:0; }
       #logo { display:none; position:relative; top:-8em; margin:auto; z-index: 1; }
@@ -24,10 +24,68 @@
       @media (max-width: 1280px) and (orientation:landscape) {
         #logo { max-height:10%; max-width:25%; }
       }
+
+	#cardtitle { color:#00aef0; font-size:2em; }
+    #carddate { color:#000; font-size:1em; font-weight: normal; }
+    #cardsubtext { color:#000; font-size:1.3em; font-weight: normal; }
+	#cardlink { color:#00aef0; font-size: 0.75em; font-weight: normal; }
+    #cardlink a:hover { color:#000; }
+    
 	li:artists {
 	    cursor: pointer;
 	}
       
+   .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+   	
+  }
+
+  .card {
+  	
+    aspect-ratio : 1 / 1;
+    --border: 2px solid black;
+    height:90%;
+    
+    background: white;
+    margin-left: 30px;
+    display:flex;
+  }
+  
+  .cardblank {
+  	
+    aspect-ratio : 1 / 1;
+    --border: 2px solid $black;
+    height:90%;
+    
+    background: white;
+    margin-left: 30px;
+    display:flex;
+  }
+  
+.card > span {
+    align-self: flex-end;
+    margin-left: 4px;
+}
+
+
+
+  .scrolling-wrapper, .scrolling-wrapper-flexbox {
+  	margin-top: 7%;
+    margin-bottom: 20px;
+    width: 100%;
+    height:60%;
+    --background: pink;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+	.scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}
 
   </style>
 </head>
@@ -51,7 +109,39 @@
       </div>
     </div>
     
-
+	<div class="scrolling-wrapper-flexbox">
+    
+    <div class="card"><span><p><span id="cardtitle">
+    ONE MORE BLOCK - SLUG CITY
+    </span><span id="carddate">
+    01.22.23
+    </span>
+    <br><span id="cardsubtext">
+    This is some subtext! It can be as long as I want! That is so cool!
+    </span><br><span id="cardlink">
+    <a href="#" >READ MORE</a>
+	</span>
+    </p></span></div>
+    
+    <div class="card"><span><p><span id="cardtitle">
+    VOLUME GAMMA - SLUG CITY
+    </span><span id="carddate">
+    01.22.23
+    </span>
+    <br><span id="cardsubtext">
+    This is some subtext! It can be as long as I want! That is so cool!
+    </span><br><span id="cardlink">
+    <a href="#" >READ MORE</a>
+	</span>
+    </p></span></div>
+    
+    <div class="card"><h2>testcard</h2></div>
+    <div class="card"><h2>testcard</h2></div>
+    <div class="card"><h2>testcard</h2></div>
+    
+    <div class="cardblank"></div>
+    
+  </div>
     <div id="container">
       <div id="logo" style="display: block;">
       	<p></p>
