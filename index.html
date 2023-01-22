@@ -32,9 +32,11 @@
 	#cardtitle { color:#DD6E0F; font-size:2em; background-color:fff;}
     #carddate { color:#000; font-size:1em; font-weight: normal; background-color:fff;}
     #cardsubtext { color:#000; font-size:1.3em; font-weight: normal; background-color:fff;}
-	#cardlink { color:#DD6E0F; font-size: 0.75em; font-weight: normal; background-color:fff;}
+    #cardlink { color:#DD6E0F; font-size: 0.75em; font-weight: normal; background-color:fff;}
     #cardlink a:hover { color:#000; }
     
+    #date {display:block; position:absolute;color:#DCDCDC; font-size: 1em; font-weight: normal;margin:auto;left:30px;top:1%;}
+	  
 	li:artists {
 	    cursor: pointer;
 	}
@@ -118,6 +120,8 @@
       </div>
     </div>
     
+	<span id="date"><p id="p1"></p></span>
+	
 	<div class="scrolling-wrapper-flexbox">
     
     <div class="card" style="background-image: url(
@@ -160,6 +164,12 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+<script>
+	var date = new Date();
+	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	document.getElementById("p1").innerHTML = current_date;
+</script>
+
 
 
 </body></html>
