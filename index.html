@@ -29,6 +29,11 @@
        100%  {margin-left: 30px;}
 
       }
+      @keyframes slidein2 {
+       0%   {margin-left: 100%;}
+       100%  {margin-left: 0px;}
+
+      }
 	#cardtitle { color:#DD6E0F; font-size:2em; background-color:fff;}
     #carddate { color:#000; font-size:1em; font-weight: normal; background-color:fff;}
     #cardsubtext { color:#000; font-size:1.3em; font-weight: normal; background-color:fff;}
@@ -82,7 +87,7 @@
 }
 
 .cardsmallt {
-  	--animation-name: slidein;
+  	animation-name: slidein2;
     animation-duration: 1.5s;
     aspect-ratio : 1 / 1;
     --border: 2px solid black;
@@ -93,7 +98,7 @@
     display:flex;
   }
 .cardsmallb {
-  	--animation-name: slidein;
+  	animation-name: slidein2;
     animation-duration: 1.5s;
     aspect-ratio : 1 / 1;
     --border: 2px solid black;
