@@ -1,0 +1,279 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>suckerPUNCH Records</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" href="favicon.ico">
+  <meta name="description" content="suckerPUNCH">
+  <style type="text/css">      body { background: #fefefe; font-family: 'Helvetica'; font-weight: bold; color:#000; margin:0; padding:0; border:0;}
+      a { color:#00000; text-decoration: none; }
+      a:hover { color:#ff6f01; }
+      input { border-radius:0; }
+      #logo { display:none; position:relative; top:-8em; margin:auto; z-index: 1; }
+      #container { position: absolute; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+      #title { display:block; position:absolute; height: 5em; text-align:center; margin:auto; bottom:5.6em; left:-100%; color:#000; opacity: 0; animation-name: titleslideout;
+    animation-duration: 1.5s;}
+      #artistname { display:block; position:absolute; height: 5em; text-align:center; margin:auto; bottom:5.6em; left:7em; color:#000; opacity: 0; animation-name: artistnameslidein; animation-duration: 1.5s;}
+      #links { text-align:left; color:#fff; display:block; position:relative; width: 10em; height:5em; bottom: 6.4em; left:103%; z-index: 2; font-size: 0.75em; font-weight: normal; }
+      #links2 { text-align:left; color:#fff; display:block; position:relative; width: 10em; height:5em; bottom: 8.4em; left:103%; z-index: 2; font-size: 0.75em; font-weight: normal; }
+      #links a { color:#000; }
+      #links a:hover { color:#DD6E0F; }
+      #links2 a { color:#000; }
+      #links2 a:hover { color:#DD6E0F; }
+      #mySidebar {font-family: 'Helvetica'; font-weight: bold; color:#fff; margin:0; padding:0; border:0;}
+      .pointer       { cursor: pointer; }
+      #anamestyle {
+      color:#000; font-size:4em;white-space:nowrap;
+      }
+      
+      @media (min-width: 425px) and (orientation:portrait) {
+        #links { bottom: 11.5em; left:0em; font-size: 1.5em; }
+      }
+
+      @media (max-width: 1280px) and (orientation:landscape) {
+        #logo { max-height:10%; max-width:25%; }
+      }
+      @keyframes slidein {
+       0%   {margin-left: 100%;}
+       100%  {margin-left: 30px;}
+
+      }
+      @keyframes slidein2 {
+       0%   {margin-left: 100%;}
+       100%  {margin-left: 0px;}
+
+      }
+      @keyframes titleslideout {
+       0%   {margin:auto; bottom:5.6em; left:7em;}
+       100%  {margin:auto; bottom:5.6em; left:-100%;}
+
+      }
+      @keyframes artistnameslidein {
+       0%   {margin:auto; bottom:5.6em; left:100%;}
+       100%  {margin:auto; bottom:5.6em; left:7em;}
+
+      }
+	#cardtitle { color:#DD6E0F; font-size:2em; background-color:fff;}
+    #carddate { color:#000; font-size:1em; font-weight: normal; background-color:fff;}
+    #cardsubtext { color:#000; font-size:1.3em; font-weight: normal; background-color:fff;}
+    #cardlink { color:#DD6E0F; font-size: 0.75em; font-weight: normal; background-color:fff;}
+    #cardlink a:hover { color:#000; }
+    #cardlink2 { color:#DD6E0F; font-size: 1em; font-weight: normal; background-color:fff;align-self: flex-end;
+    margin-left: 4px;}
+    #cardlink2 a:hover { color:#000; }
+	  
+    #date {display:block; position:absolute;color:#DCDCDC; font-size: 1em; font-weight: normal;margin:auto;left:30px;top:1%;}
+	  
+	li:artists {
+	    cursor: pointer;
+	}
+      
+   .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+   	background: white;
+  }
+
+  .card {
+  	animation-name: slidein;
+    animation-duration: 1.5s;
+    aspect-ratio : 1 / 1;
+    --border: 2px solid black;
+    height:90%;
+    
+    background: white;
+    margin-left: 30px;
+    display:flex;
+  }
+  
+  .cardblank {
+  	
+    aspect-ratio : 1 / 1;
+    --border: 2px solid $black;
+    height:90%;
+    
+    background: white;
+    margin-left: 30px;
+    display:flex;
+  }
+  
+.card > span {
+    align-self: flex-end;
+    margin-left: 4px;
+    
+    
+}
+
+.cardsmallt {
+  	animation-name: slidein2;
+    animation-duration: 1.5s;
+    aspect-ratio : 1 / 1;
+    --border: 2px solid black;
+    height:42%;
+    
+    background: white;
+    --margin-left: 30px;
+    display:flex;
+  }
+.cardsmallb {
+  	animation-name: slidein2;
+    animation-duration: 1.5s;
+    aspect-ratio : 1 / 1;
+    --border: 2px solid black;
+    height:42%;
+    margin-top: 14%;
+    background: white;
+    --margin-left: 30px;
+    display:flex;
+  }
+.cardsmallt > span, .cardsmallb > span {
+    align-self: flex-end;
+    margin-left: 4px;
+    
+    
+}
+.smallcards {
+	--margin-right:30px;
+    margin-left:30px;
+    background: white;
+    height:100%;
+    aspect-ratio : .4 / 1;
+  }
+.skinnycard {
+	animation-name: slidein;
+    animation-duration: 1.5s;
+    aspect-ratio : .6 / 1;
+    --border: 2px solid black;
+    height:90%;
+    
+    background: white;
+    margin-left: 30px;
+    display:flex;
+  }
+.skinnycard > span {
+	align-self: flex-end;
+    margin-left: 4px;
+    font-size: .8em;
+}
+#cardsmalltitle { color:#000; font-size:1em; background-color:fff;}
+
+  .scrolling-wrapper, .scrolling-wrapper-flexbox {
+  	
+  	margin-top: 7%;
+    margin-bottom: 20px;
+    width: 100%;
+    height:60%;
+    --background: white;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+	.scrolling-wrapper-flexbox::-webkit-scrollbar {
+  display: none;
+}</style>
+</head>
+<body style="zoom: 1; background-color: rgb(255, 255, 255);">
+
+    <div id="title" style="color: rgb(255, 255, 255); opacity: 1;">
+      <img src="logocolor.png" alt="suckerPUNCH" height="75">
+      <div id="links">
+        <div class="pointer"><a target="_blank" onclick="#">ARTISTS</a><br></div>
+        <a target="_blank" href="../store">STORE</a><br>
+        <a href="../news">NEWS</a><br>
+        <a href="../about">ABOUT</a><br>
+      </div>
+    </div>
+    
+    <div id="artistname" style="color: rgb(255, 255, 255); opacity: 1;">
+      <span id="anamestyle">
+      slug city
+      </span>
+      <div id="links">
+		<a href="https://www.suckerpunchrecords.net/">HOME</a><br>
+        <a target="_blank" href="../store">STORE</a><br>
+        <a href="../news">NEWS</a><br>
+        <a href="../about">ABOUT</a><br>
+        
+      </div>
+    </div>
+    
+	<span id="date"><p id="p1"></p></span>
+	
+	<div class="scrolling-wrapper-flexbox">
+    
+    <div class="card" style="background-image: url(
+    pictures/slugcity.png
+    );background-position: center;background-size: cover;background-repeat: no-repeat;"></div>
+    
+    <div class="skinnycard" ><span><p>		<span id="cardsubtext">
+    
+    mauro reyes, better known by his stage name slug city, is an american producer, vocalist, and multi-instrumentalist from atlanta, ga. he released his debut album, volume gamma, in april 2022, followed by a supplemental ep, one more block, later that year.
+    
+    </span>
+    </p></span></div>
+    
+    
+    <div class="smallcards">
+    
+    <div class="cardsmallt">
+    
+    <span>
+    
+    <p><span id="cardsmalltitle">
+    LISTEN
+    </span><br><span id="cardlink">
+    <a target="_blank" href="https://open.spotify.com/artist/2ElM6xA4vOVFQcBQ9rtLrM?si=guuKeRJZRa6huxGLgjNqTg">SPOTIFY</a>
+    <br>
+    <a target="_blank" href="https://music.apple.com/us/artist/slug-city/1621238368">APPLE MUSIC</a>
+    <br>
+    <a target="_blank" href="https://www.youtube.com/@SLGCTY">YOUTUBE</a>
+    </span>
+    </p>
+    
+    <p><span id="cardsmalltitle">
+    CONTACT
+    </span><br><span id="cardlink">
+    <a target="_blank" href="mailto:notianreyes@gmail.com">EMAIL</a>
+    </span>
+    </p>
+    
+    </span>
+    
+    
+    </div>
+    
+    <div class="cardsmallb" style="background-image: url(
+    ../covers/volumegamma.png
+    );background-position: center;background-size: cover;background-repeat: no-repeat;"><span><p><span id="cardsmalltitle">
+    VOLUME GAMMA
+    </span><br><span id="cardlink">
+    <a target="_blank" href="https://distrokid.com/hyperfollow/slugcity/volume-gamma-2">LISTEN HERE</a>
+    </span>
+    </p></span></div>
+    </div>
+		
+    <div class="cardblank"><span id="cardlink2"></span></div>
+    
+  </div>
+   <hr style="height:2px;border-width:0;color:gray;background-color:#DCDCDC;margin-left:30px;width:50%">
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script>
+	var date = new Date();
+	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	document.getElementById("p1").innerHTML = current_date;
+</script>
+
+
+
+</body></html>
